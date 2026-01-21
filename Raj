@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alex & Taylor — Wedding</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Join Alex & Taylor as they celebrate their wedding on June 12, 2026. RSVP and find venue details here.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#hero" class="logo">Alex & Taylor</a>
+        <div class="date">June 12, 2026</div>
+      </div>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Main">
+        <a href="#our-story">Our Story</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#venue">Venue</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#rsvp">RSVP</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <h1>Alex & Taylor</h1>
+        <p class="lead">We're getting married</p>
+        <p class="wedding-date">June 12, 2026 — 4:00 PM</p>
+        <div id="countdown" class="countdown" aria-live="polite">
+          <div><span id="days">0</span><small>Days</small></div>
+          <div><span id="hours">0</span><small>Hours</small></div>
+          <div><span id="minutes">0</span><small>Minutes</small></div>
+          <div><span id="seconds">0</span><small>Seconds</small></div>
+        </div>
+        <a href="#rsvp" class="btn">RSVP</a>
+      </div>
+    </section>
+
+    <section id="our-story" class="section container">
+      <h2>Our Story</h2>
+      <p>We met in 2018 at a coffee shop and quickly discovered a shared love for travel, board games, and terrible puns. After many adventures (and one very memorable trip to the coast), we're excited to celebrate with family and friends.</p>
+      <div class="two-col">
+        <div>
+          <h3>Proposal</h3>
+          <p>On a crisp autumn morning, during a hike with the most beautiful view, Alex asked. Of course, Taylor said yes.</p>
+        </div>
+        <div>
+          <h3>What to Expect</h3>
+          <p>Casual dress. Ceremony followed by dinner and dancing. Kid-friendly: please see notes on the RSVP form.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="section alt container">
+      <h2>Schedule</h2>
+      <ul class="schedule-list">
+        <li><time>4:00 PM</time> Ceremony — Rose Garden</li>
+        <li><time>5:00 PM</time> Cocktail Hour — Terrace</li>
+        <li><time>6:00 PM</time> Dinner & Toasts — Ballroom</li>
+        <li><time>8:00 PM</time> Dancing & Desserts — Ballroom</li>
+      </ul>
+    </section>
+
+    <section id="venue" class="section container">
+      <h2>Venue</h2>
+      <p>Sunset Manor, 123 Garden Lane, Hometown, ST</p>
+      <!-- Replace iframe src with Google Maps link for the actual venue -->
+      <div class="map-wrap" aria-hidden="false">
+        <iframe
+          title="Venue location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086... (replace with your map)"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p><strong>Parking:</strong> On-site parking available. Valet provided. <strong>Accessibility:</strong> Ramp access and accessible restrooms.</p>
+    </section>
+
+    <section id="gallery" class="section alt container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="assets/photo1.jpg" alt="Couple portrait 1">
+        <img src="assets/photo2.jpg" alt="Couple portrait 2">
+        <img src="assets/photo3.jpg" alt="Engagement shot">
+        <img src="assets/photo4.jpg" alt="Fun photo with friends">
+      </div>
+    </section>
+
+    <section id="rsvp" class="section container">
+      <h2>RSVP</h2>
+      <p>Please RSVP by May 1, 2026. Use the form below or email us at <a href="mailto:alexandtaylor@example.com">alexandtaylor@example.com</a>.</p>
+
+      <!-- Formspree example: replace action with your Formspree form endpoint -->
+      <form id="rsvp-form" class="rsvp-form" method="POST" action="https://formspree.io/f/your-form-id">
+        <label>
+          Your name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="_replyto" required>
+        </label>
+        <label>
+          Will you attend?
+          <select name="attendance" required>
+            <option value="">Please choose</option>
+            <option>Yes, I will attend</option>
+            <option>No, I am sorry</option>
+            <option>Maybe</option>
+          </select>
+        </label>
+        <label>
+          Number of guests (including you)
+          <input type="number" name="guests" min="1" max="10" value="1" required>
+        </label>
+        <label>
+          Dietary restrictions / Notes
+          <textarea name="notes" rows="3"></textarea>
+        </label>
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit" class="btn">Send RSVP</button>
+        <div id="rsvp-message" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="section container">
+      <h2>Registry</h2>
+      <p>Your presence is the greatest gift — but if you'd like to gift something, we've registered at:</p>
+      <ul class="registry-list">
+        <li><a href="#" target="_blank" rel="noopener">HomeGoods Registry</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Honeymoon Fund</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Alex & Taylor — Made with ❤️</p>
+      <p class="small">This page is a template. Replace text, images, and links with your details.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
